@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>
+<html class="nojs ie-lt7 ie-lt8 ie-lt9 ie-lt10 ie">
+<![endif]-->
+<!--[if lt IE 8]>
+<html class="nojs ie-lt8 ie-lt9 ie-lt10 ie">
+<![endif]-->
+<!--[if lt IE 9]>
+<html class="nojs ie-lt9 ie-lt10 ie">
+<![endif]-->
+<!--[if lt IE 10]>
+<html class="nojs ie-lt10 ie">
+<![endif]-->
+<!--[if gt IE 8]> <!-->
+<html class="nojs">
+<!--><![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание для верстальщика в Яндекс</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+<body class="b-page">
+    <h1 class="b-page__title">Тестовое задание для верстальщика</h1>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте небольшой текст</h2>
+        <div class="b-text">
+            <p>Обычно при вёрстке и программировании сайта разработчики опираются на допущение, что дизайн и технические требования к странице не изменятся в процессе разработки.</p>
+            <p>Дизайнер, верстальщик и программист каждый работает в своей области, часто не пересекаясь друг с другом:</p>
+            <ol class="b-text__list b-text__list_type_numeric">
+                <li>Дизайнер создаёт дизайн в виде набора макетов</li>
+                <li>Из этих макетов делается статическая HTML/CSS вёрстка</li>
+                <li>Она передаётся программисту для создания шаблонов на каком-то серверном языке и оживлении сайта с помощью JavaScript</li>
+            </ol>
+            <p>Такой подход хорошо работает только в том случае, если дизайн сайта остаётся неизменным всё время его жизни и изменения только добавляют контент.</p>
+            <p>Но обычно так не происходит, сайт начинает жить своей жизнью и развиваться. Дизайн страниц постепенно меняется, добавляются новые страницы или новые блоки на них.</p>
+            <p>Если в код сайта не заложена определённая структура, если он делается не по фиксированным правилам, то постепенно его становится всё сложнее и сложнее разрабатывать, код сайта становится неподвластным разработчикам.</p>
+            <p>При БЭМ-подходе все люди, принимающие участие в разработке сайта, работают с единым кодом и общаются в одних и тех же терминах, на одном языке:</p>
+            <ol class="b-text__list b-text__list_type_numeric">
+                <li>Дизайн сайта может измениться в любой момент, надо быть к этому готовым</li>
+                <li>HTML/CSS разметка развивается вместе с дизайном, готова к его изменению</li>
+                <li>Программист вместе в верстальщиком работают над кодом сайта, дополняя код друг друга</li>
+            </ol>
+            <h3>Условия появления методологии</h3>
+            <p>БЭМ-методология была разработана в <a href="http://company.yandex.ru">Яндексе</a> при разработке большого количества сервисов для решения следующих задач:</p>
+            <ul class="b-text__list b-text__list_type_marker">
+                <li>Типовые проекты должны разрабатываться быстро, но жить долго. Нужно уметь за короткий срок создать проект, архитектура которого позволит без труда поддерживать и развивать его долгие годы.</li>
+                <li>Над проектом работает много людей. Нужно уметь эффективно организовывать работу команд, как из двух разработчиков, так и из десятков.</li>
+                <li>Масштабируемость команд. Добавление новых людей в команду должно улучшать производительность команды. Необходима возможность быстро вводить новых разработчиков в курс дела и выделять им собственные зоны ответственности. Для того, чтобы с одним и тем же кодом можно было работать долгое время и разным составом команды, код должен быть хорошо структурирован.</li>
+                <li>Повторное использование кода. Каждый новый проект или элемент интерфейса не должны писаться с нуля. Если где-то внутри компании уже выполнялась похожая задача, нужно максимально повторно использовать полученный в результате код. У кода не должно быть контекстной зависимости, его нужно уметь легко переносить в другое место.</li>
+            </ul>
+            <p>Мы искали решения возникающих перед нами проблем. Начиная с какого-то момента эти решения составили <tt>методологию БЭМ</tt>.</p>
+        </div>
+    </div>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте контрол оценки и показа рейтинга</h2>
+        <div class="b-rating">
+            <form class="b-rating__form" action="#">
+                <div class="b-rating__inner i-inline">
+                    <input class="b-rating__input i-inline" type="radio" name="rate" id="rating_5" value="5">
+                    <label class="b-rating__label b-rating__label_width_5 i-inline" for="rating_5">5</label>
+                    <input class="b-rating__input i-inline" type="radio" name="rate" id="rating_4" value="4">
+                    <label class="b-rating__label b-rating__label_width_4 i-inline" for="rating_4">4</label>
+                    <input class="b-rating__input i-inline" type="radio" name="rate" id="rating_3" value="3">
+                    <label class="b-rating__label b-rating__label_width_3 i-inline" for="rating_3">3</label>
+                    <input class="b-rating__input i-inline" type="radio" name="rate" id="rating_2" value="2">
+                    <label class="b-rating__label b-rating__label_width_2 i-inline" for="rating_2">2</label>
+                    <input class="b-rating__input i-inline" type="radio" name="rate" id="rating_1" value="1">
+                    <label class="b-rating__label b-rating__label_width_1 i-inline" for="rating_1">1</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте прогресс-бар</h2>
+        <div class="b-progressbar">
+            <div class="b-progressbar__wrapper">
+                <div class="b-progressbar__value"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте кнопку</h2>
+        <div class="b-button-block">
+            <p>Кнопка-ссылка: <a href="#" class="b-button" tabindex="0" role="button">
+                                  <span class="b-button__text">Кнопка</span>
+                              </a></p>
+
+            <p>Кнопка(button): <button class="b-button" tabindex="0" role="button">
+                                   <span class="b-button__text">Кнопка</span>
+                               </button></p>
+
+            <p>Кнопка(вложенный input): <span class="b-button" tabindex="0" role="button">
+                                            <span class="b-button__text">Кнопка</span>
+                                            <input class="b-button__submit" type="submit">
+                                        </span></p>
+        </div>
+    </div>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте список из иконок</h2>
+        <ul class="b-ico-list i-clearfix">
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_chrome">
+                    <img class="b-ico-list__img" src="images/chrome.png" alt="Chrome">
+                    <div class="b-ico-list__text">Ch<span class="b-ico-list__text_color_red">ro</span><span class="b-ico-list__text_color_yellow">me</span></div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_firefox">
+                    <img class="b-ico-list__img" src="images/firefox.png" alt="Firefox">
+                    <div class="b-ico-list__text">Firefox</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_opera">
+                    <img class="b-ico-list__img" src="images/opera.png" alt="Opera">
+                    <div class="b-ico-list__text">Opera</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_safari">
+                    <img class="b-ico-list__img" src="images/safari.png" alt="Safari">
+                    <div class="b-ico-list__text">Safari</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item b-ico-list__item_position_last">
+                <div class="b-ico-list__image b-ico-list__image_type_ie">
+                    <img class="b-ico-list__img" src="images/ie.png" alt="Internet Explorer">
+                    <div class="b-ico-list__text">Internet<br/> Explorer</div>
+                </div>
+            </li>
+        </ul>
+        <ul class="b-ico-list">
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_chrome">
+                    <img class="b-ico-list__img" src="images/chrome-bad.png" alt="Chrome">
+                    <div class="b-ico-list__text">Ch<span class="b-ico-list__text_color_red">ro</span><span class="b-ico-list__text_color_yellow">me</span></div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_firefox">
+                    <img class="b-ico-list__img" src="images/firefox-bad.png" alt="Firefox">
+                    <div class="b-ico-list__text">Firefox</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_opera">
+                    <img class="b-ico-list__img" src="images/opera-bad.png" alt="Opera">
+                    <div class="b-ico-list__text">Opera</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item">
+                <div class="b-ico-list__image b-ico-list__image_type_safari">
+                    <img class="b-ico-list__img" src="images/safari-bad.png" alt="Safari">
+                    <div class="b-ico-list__text">Safari</div>
+                </div>
+            </li>
+            <li class="b-ico-list__item b-ico-list__item_position_last">
+                <div class="b-ico-list__image b-ico-list__image_type_ie">
+                    <img class="b-ico-list__img" src="images/ie-bad.png" alt="Internet Explorer">
+                    <div class="b-ico-list__text">Internet<br/> Explorer</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="b-page__item i-clearfix">
+        <h2 class="b-page__item-title">Сверстайте текст</h2>
+        <div class="b-text">
+            <h3>Тема: «Сюжетный анапест: основные моменты»</h3>
+
+            <div class="b-text__coll b-text__coll_position_left i-inline">
+                <p>Нельзя восстановить истинной хронологической последовательности событий, потому что мелькание мыслей параллельно. Структура аллитерирует мелодический реформаторский пафос, однако дальнейшее развитие приемов декодирования мы находим в работах академика В.Виноградова. Аллюзия наблюдаема. Аллитерация, как бы это ни казалось парадоксальным, параллельна. Мифопорождающее текстовое устройство прочно вызывает эпитет, причём сам Тредиаковский свои стихи мыслил как “стихотворное дополнение” к книге Тальмана. </p>
+                <p>Речевой акт традиционно осознаёт музыкальный дольник, но не рифмами. Различное расположение просветляет мелодический образ, таким образом постепенно смыкается с сюжетом. Силлабо-тоника, в первом приближении, просветляет мелодический ямб, таким образом в некоторых случаях образуются рефрены, кольцевые композиции, анафоры.</p>
+            </div><div class="b-text__coll b-text__coll_position_right i-inline">
+                <p>Представленный лексико-семантический анализ является психолингвистическим в своей основе, но мифопорождающее текстовое устройство аллитерирует мифологический генезис свободного стиха, об этом свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания. </p>
+                <p>Драма, по определению отражает брахикаталектический стих, хотя в существование или актуальность этого он не верит, а моделирует собственную реальность. Лексика осознаёт литературный палимпсест, об этом свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания.</p>
+                <ul>
+                    <li>Курит ли трупка мой</li>
+                    <li><a class="b-link" href="#">из трупка тфой пихтишь</a></li>
+                    <li><a class="b-link b-link__pseudo">Или мой кафе пил</a></li>
+                    <li>тфой в щашешка сидишь</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
